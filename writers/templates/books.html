@@ -1,0 +1,13 @@
+{% extends "master.html" %}
+
+{% block content %}
+<h1>Best books:</h1>
+
+<ul>
+    {% for x in books %}
+      <li>{{x.id}}&nbsp; <a href="{% url 'details' x.id %}"> {{ x.title }} ({{ x.author }})</a></li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}
+

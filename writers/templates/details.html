@@ -1,0 +1,11 @@
+{% extends "master.html" %}
+
+{% block content %}
+<h1>{{ book.title }} by {{ book.author }}</h1>
+
+<h3> Information about this book.</h3>
+
+
+<p>Back to: <a href="{% url 'best books' %}">Best books</a></p>
+
+{% endblock %}
